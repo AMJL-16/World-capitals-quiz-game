@@ -22,33 +22,32 @@ print("")
 
 PLAYING = ""
 while PLAYING == "":
-    playing = input("Do you want to play? (yes/no)  ").strip()
-    if playing.lower() == "no":
+    PLAYING = input("Do you want to play? (yes/no)  ").strip()
+    if PLAYING.lower() == "no":
         print("I am sorry that you don't want to play! Have a nice day!\n")
         quit()
-    elif playing.lower() == "yes":
+    elif PLAYING.lower() == "yes":
         break
-
     print("Not a valid answer! Please, answer yes or no!\n")
     PLAYING = ""
 
 NAME = ""
 while NAME == "":
-    name = input('Please, enter your Name to start the game: ').strip()
-    if name == "":
+    NAME = input('Please, enter your Name to start the game: ').strip()
+    if NAME == "":
         print("Your name cannot be nothing!\n")
-    elif name.isdigit():
+    elif NAME.isdigit():
         print("Your name cannot be a number!\n")
         NAME = ""
-    elif not name.isalpha():
+    elif not NAME.isalpha():
         print("Your name should contain only letters!\n")
         NAME = ""
-    elif len(name) < 3:
+    elif len(NAME) < 3:
         print("Your name should be at least 3 letters long!\n")
         NAME = ""
 
 print("")
-print(f"Hello, {name} have fun!\n")
+print(f"Hello, {NAME} have fun!\n")
 
 # Define a dictionary that contains the countries and capitals for the quiz.
 world_capital = {
