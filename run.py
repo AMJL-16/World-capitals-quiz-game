@@ -89,7 +89,7 @@ def capital_quiz():
         print(f"You SCORED {score} out of 20 questions.\n")  # print the score.
 
     # asking if the player wants to play again.
-    play_again = input("Do you want play again (yes or no)?  ")
+    play_again = input("Do you want to play again (yes or no)?  ")
     if play_again.lower() == "yes":  # if yes the game restart.
         print("")
         print("Great, let's sharpen your knowledge.\n")
