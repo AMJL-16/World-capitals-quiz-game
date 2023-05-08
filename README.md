@@ -1,6 +1,7 @@
  # WORLD CAPITAL QUIZ GAME
  
-The World Capitals Quiz Game is a fun and educational quiz game that tests your knowledge of the world's capital cities. The game presents you with a list of 20 countries and asks you to guess the corresponding capital city. The quiz game is built with Python and runs in the Code Institute terminal on Heroku.
+The World Capitals Quiz Game is a fun and educational game that tests the player knowledge of the world's capital cities. The game presents you with a list of countries and asks you to guess the corresponding capital city.
+#### The quiz game is built with Python3 and runs in the Code Institute mock terminal for Heroku.
 
 [Live version of the quiz, here.](https://world-capitals-quiz-game.herokuapp.com/)
 
@@ -10,7 +11,7 @@ The World Capitals Quiz Game is a fun and educational quiz game that tests your 
 - The game will ask the player if she/he wants to play, answer yes/ 
   no.
 - The game will ask the player to enter your name.
-- You will be asked a series of 20 questions, asking you to name 
+- You will be asked a series of questions, asking you to name 
   the capital city of a specific country.
 - Answer each question by typing in the name of the corresponding 
   capital city.
@@ -35,7 +36,7 @@ The World Capitals Quiz Game is a fun and educational quiz game that tests your 
 - At the end of the game the player has the choice to start a new 
   game or stop.
 
-Future Features
+## Future Features
 
 - Adding all the capitals of the world.
 - Improving user experience.
@@ -46,4 +47,23 @@ Future Features
 - Tested for invalid inputs: wrong answer, space, numbers and more.
 - Tested the quiz in my local terminal and in the Code Institute mock terminal.
 
-Bugs
+## Bugs
+Solved Bugs
+
+- I had some problem with validation which I fixed.
+- Player input wasn't working properly so I fixed it with a while loop and if 
+  elif statement to check for correct validation which solve the problem.
+- All the input validation folloow the same model of execution.
+
+## Remaining bugs
+- None
+
+## Validator Testing
+
+- Code Institute PEP8 python linter
+  - No errors of syntax or indentations returned.
+
+# Deployment 
+
+### This project was deployed using Code Institute's mock terminal for heroku.
+

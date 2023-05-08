@@ -137,7 +137,7 @@ def capital_quiz():
             score += 1  # incremneting the score by 1 if correct answer.
         else:
             print("I am afraid not!\n")
-            # we give the correct answer to the playerif it is incorrect.
+            # we give the correct answer to the player if it is incorrect.
             print(f"The capital of {country} is {world_capital[country]}\n")
 
         # print the score.
