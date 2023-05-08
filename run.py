@@ -149,13 +149,17 @@ while True:
         first_time_run = False
     else:       
         # asking if the player wants to play again.
-        play_again = input("Do you want to play again (yes or no)?  ")
+        play_again = input("Do you want to play again (yes/no)?  ").strip()
         if play_again.lower() == "yes":  # if yes the game restart.
             print("")
             print("Great, let's sharpen your knowledge.\n")
             capital_quiz()
-        else:  # if no this is the end of the game.
+        # if no this is the end of the game.
+        elif play_again.lower() == "no":  
             print("")
             print("GAME OVER...GAME OVER...GAME OVER...\n")
             print("Thanks for playing, see you next time!")
             break
+        else:
+            print("invalid input! Try again!\n")
+            
