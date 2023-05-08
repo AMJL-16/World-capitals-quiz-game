@@ -1,39 +1,42 @@
  # WORLD CAPITAL QUIZ GAME
  
-The World Capitals Quiz Game is a fun and educational game that tests the player knowledge of the world's capital cities. The game presents you with a list of countries and asks you to guess the corresponding capital city.
+The World Capitals Quiz Game is a fun and educational game that tests the player's knowledge of the world's capital cities. The game presents you with a list of countries and asks you to guess the corresponding capital city.
 #### The quiz game is built with Python3 and runs in the Code Institute mock terminal for Heroku.
 
 [Live version of the quiz, here.](https://world-capitals-quiz-game.herokuapp.com/)
 
-<img width="686" alt="pep8 validation" src="https://user-images.githubusercontent.com/116040510/236935085-9883f1f0-7cdb-4c5b-9caa-c2adbf1f5357.png">
+<img width="674" alt="am i responsive " src="https://user-images.githubusercontent.com/116040510/236935363-26a66cf8-c31c-4ad1-bcfe-f74d1cd6085e.png">
+
 
 # How to play
 - The player will be presented with the game's title and rules.
-- The game will ask the player if she/he wants to play, answer yes/ 
+- The game will ask the player if she/he wants to play, and answer yes/ 
   no.
 - The game will ask the player to enter your name.
 - You will be asked a series of questions, asking you to name 
   the capital city of a specific country.
 - Answer each question by typing in the name of the corresponding 
   capital city.
-- If the player answer a question correctly, she/he will receive  
+- If the player answers a question correctly, she/he will receive  
   one point.
 - if you give the wrong answer, you will receive zero points and  
   the correct answer will be displayed.
-- Your score will be displayed after each questions.
+- Your score will be displayed after each question.
 - At the end of the quiz you will be asked if you want to play 
   again.
 
 
 # Features
 
-- Display of the game name and rules of the game.
+- Display the game name and rules of the game.
+- <img width="371" alt="title and rulesquiz game" src="https://user-images.githubusercontent.com/116040510/236935418-7b06e840-7f3a-45d2-b84f-c15d5a16bca5.png">
+
 - Random selection of questions each time the game is played.
 - Simple command-line interface.
 - Input validation and error-checking.
 - Provides the player with feedback on their answer if correct or 
   incorrect. 
-- Calculates and displays the player's score after each questions.
+- Calculates and displays the player's score after each question.
 - At the end of the game the player has the choice to start a new 
   game or stop.
 
@@ -45,16 +48,16 @@ The World Capitals Quiz Game is a fun and educational game that tests the player
 
 # Testing
 - Passed the code through CI PEP8 Python linter with no error.
-- Tested for invalid inputs: wrong answer, space, numbers and more.
-- Tested the quiz in my local terminal and in the Code Institute mock terminal.
+- Tested for invalid inputs: wrong answer, space, numbers, and more.
+- Tested the quiz in my local terminal and the Code Institute mock terminal.
 
 ## Bugs
 Solved Bugs
 
-- I had some problem with validation which I fixed.
+- I had some problems with validation which I fixed.
 - Player input wasn't working properly so I fixed it with a while loop and if 
-  elif statement to check for correct validation which solve the problem.
-- All the input validation folloow the same model of execution.
+  elif statement to check for correct validation which solves the problem.
+- All the input validation follows the same model of execution.
 
 ## Remaining bugs
 - None
@@ -63,6 +66,7 @@ Solved Bugs
 
 - Code Institute PEP8 python linter
   - No errors of syntax or indentations returned.
+<img width="686" alt="pep8 validation" src="https://user-images.githubusercontent.com/116040510/236935085-9883f1f0-7cdb-4c5b-9caa-c2adbf1f5357.png">
 
 # Deployment 
 
