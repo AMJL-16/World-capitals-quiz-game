@@ -65,5 +65,32 @@ Solved Bugs
 
 # Deployment 
 
-### This project was deployed using Code Institute's mock terminal for heroku.
+#### This project was deployed using Code Institute's mock terminal for heroku.
+- Steps for deployment:
+  - Fork or clone this repository
+  - Create a new Heroku app
+  - Set the config var if needed
+  - Set the buildpacks to python and NodeJs in that order.
+  - Link the Heroku app to the repository
+  - click on Deploy
+ # Credits
+
+- Code Institute for the deployment terminal.
+- Code Institute for the base of the README.md
+- This website for the list of capitals by countries [click here](https://www.countries-ofthe-world.com/)
+- I watched and learned a lot through different tutorials:
+  - W3 school for the while loops and more [click here](https://www.w3schools.com/python/python_while_loops.asp)
+  - freecodecamp.org(20 Python projects, 12 python projects)
+  - Tech With Tim(5 Python projects, oop tutorial)
+  - programming with Nick
+- Python website [click here](https://docs.python.org/)
+- The book Python by Eric Matthes
+
+# Acknowledgment
+
+A special thank you to one of the CI student Tomislav Dukez for is help on explaining concept when I wasn't understanding it and pushing me to improve my coding skills.
+
+
+
+
 
