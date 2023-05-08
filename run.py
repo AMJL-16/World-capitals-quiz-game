@@ -1,5 +1,7 @@
 """
-creation of a world capital quiz game
+Print out the title,rules of the game then
+ask the player if they want to play and to input their name
+to start the game.
 """
 
 print('--------------------------------')
@@ -22,7 +24,7 @@ name = input('Cool, enter your Name to start the game: ')
 print("")
 print(f"Hello, {name} have fun!\n")
 
-# building the dictionary with countries and capitals as a gobal variable
+# Define a dictionary that contains the countries and capitals for the quiz.
 world_capital = {
     "France": "Paris",
     "Bostwana": "Gaborone",
@@ -45,3 +47,13 @@ world_capital = {
     "Thailand ": "Bangkok",
     "Lebanon ": "Beirut"
            }
+
+
+# Function is used to handle empty or incorrect input from the player.
+
+def handle_input(player_answer):
+    if player_answer == "":
+        print("You did not enter anything. Please try again.\n")
+        return False
+    else:
+        return True
