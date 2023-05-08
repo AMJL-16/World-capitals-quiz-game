@@ -16,10 +16,20 @@ print('then you will go to the next question.')
 print('Your score is displayed after each question.')
 print('')
 print("********************************")
-playing = input("Do you want to play?  ")
-if playing.lower() != "yes":
-    quit()
+print("")
 
+playing = ""
+while playing == "":
+    playing = input("Do you want to play? (yes/no)  ").strip()
+    if playing.lower() == "no":
+        print("I am sorry that you don't want to play! Have a nice day!\n")
+        quit()
+    elif playing.lower() == "yes":
+        break
+    
+    print("Not a valid answer! Please, answer yes or no!\n")
+    playing = ""
+        
 name = ""
 while name == "":
     name = input('Please, enter your Name to start the game: ').strip()
