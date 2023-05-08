@@ -9,9 +9,9 @@ print("|   WORLD CAPITALS QUIZ GAME   |")
 print('--------------------------------\n')
 print("********************************")
 print('')
-print("Rules of the Quiz:")
-print('To play answer each questions and press enter!')
-print('If you answer correctly you will score one point if wrong Zero,')
+print("Rules of the Quiz:\n")
+print('To play answer each question and press enter!')
+print('If you answer correctly you will score one point if your wrong Zero,')
 print('then you will go to the next question.')
 print('Your score is displayed after each question.')
 print('')
@@ -62,7 +62,7 @@ def handle_input(player_answer):
         return True
 
 
-# Define function to run the main quiz game.
+# Define main function to start the quiz.
 
 def capital_quiz():
     """
@@ -86,16 +86,19 @@ def capital_quiz():
             print("I am afraid not!\n")
             # we give the correct answer to the playerif it is incorrect.
             print(f"The capital of {country} is {world_capital[country]}\n")
-        print(f"You SCORED  {score} out of 20 questions.")  # print the score.
+        print(f"You SCORED {score} out of 20 questions.\n")  # print the score.
 
     # asking if the player wants to play again.
     play_again = input("Do you want play again (yes or no)?  ")
     if play_again.lower() == "yes":  # if yes the game restart.
+        print("")
         print("Great, let's sharpen your knowledge.\n")
         capital_quiz()
     else:  # if no this is the end of the game.
+        print("")
         print("GAME OVER...GAME OVER...GAME OVER...\n")
         print("Thanks for playing, see you next time!")
 
 
+# call the main quiz function
 capital_quiz()
