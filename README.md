@@ -78,12 +78,12 @@ Solved Bugs
 
 # Deployment 
 
-#### This project was deployed using Code Institute's mock terminal for heroku.
+#### This project was deployed using Code Institute's mock terminal for Heroku.
 - Steps for deployment:
   - Fork or clone this repository
   - Create a new Heroku app
   - Set the config var if needed
-  - Set the buildpacks to python and NodeJs in that order.
+  - Set the build packs to Python and NodeJs in that order.
   - Link the Heroku app to the repository
   - click on Deploy
  # Credits
@@ -101,7 +101,7 @@ Solved Bugs
 
 # Acknowledgment
 
-A special thank you to one of the CI student Tomislav Dukez for is help on explaining concept when I wasn't understanding it and pushing me to improve my coding skills.
+A special thank you to one of the CI student Tomislav Dukez for his help in explaining concepts when I wasn't understanding them and for pushing me to improve my coding skills.
 
 
 
