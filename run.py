@@ -20,7 +20,21 @@ playing = input("Do you want to play?  ")
 if playing.lower() != "yes":
     quit()
 
-name = input('Cool, enter your Name to start the game: ')
+name = ""
+while name == "":
+    name = input('Please, enter your Name to start the game: ').strip()
+    if name == "":
+        print("Your name cannot be nothing!\n")
+    elif name.isdigit():
+        print("Your name cannot be a number!\n")
+        name = ""
+    elif not name.isalpha():
+        print("Your name should contain only letters!\n")
+        name = ""
+    elif len(name) < 3:
+        print("Your name should be at least 3 letters long!\n")
+        name = ""
+
 print("")
 print(f"Hello, {name} have fun!\n")
 
