@@ -1,3 +1,7 @@
+"""
+creation of a world capital quiz game
+"""
+
 print('--------------------------------')
 print("|   WORLD CAPITALS QUIZ GAME   |")
 print('--------------------------------\n')
@@ -10,4 +14,3 @@ print('then you will go to the next question.')
 print('Your score is displayed after each question.')
 print('')
 print("********************************")
-
