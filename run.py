@@ -67,4 +67,7 @@ def capital_quiz():
     Using a for loop to iterate over each country stored in the dictionary and
     asking the player fro the correct answer.
     """
-
+    for country in world_capital:
+        player_answer = input(f'What is the capital of {country} ? : ')
+        correct_answer = world_capital[country]
+    #checking if the player has enter a valid answer.
