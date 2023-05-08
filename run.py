@@ -1,11 +1,10 @@
-import random
-
-
 """
 Print out the title,rules of the game then
 ask the player if they want to play and to input their name
 to start the game.
 """
+
+import random
 
 print('--------------------------------')
 print("|   WORLD CAPITALS QUIZ GAME   |")
@@ -163,4 +162,3 @@ while True:
             break
         else:
             print("invalid input! Try again!\n")
-
