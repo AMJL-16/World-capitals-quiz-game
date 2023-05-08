@@ -32,13 +32,22 @@ The World Capitals Quiz Game is a fun and educational game that tests the player
 - <img width="371" alt="title and rulesquiz game" src="https://user-images.githubusercontent.com/116040510/236935418-7b06e840-7f3a-45d2-b84f-c15d5a16bca5.png">
 
 - Random selection of questions each time the game is played.
-- Simple command-line interface.
+- <img width="176" alt="random questions" src="https://user-images.githubusercontent.com/116040510/236936688-1221a831-a1e1-4913-aaa6-f6d57eb9b171.png">
+
 - Input validation and error-checking.
+- <img width="233" alt="input validation " src="https://user-images.githubusercontent.com/116040510/236936278-1b1d3bda-973d-499f-8838-25d4cb279bb2.png">
+mexico city
 - Provides the player with feedback on their answer if correct or 
   incorrect. 
+  <img width="178" alt="random questions" src="https://user-images.githubusercontent.com/116040510/236937145-3f708dfa-7cb4-492c-b234-49ed1e063a81.png">
+
 - Calculates and displays the player's score after each question.
+- <img width="172" alt="score " src="https://user-images.githubusercontent.com/116040510/236937386-053d2cfd-e029-419c-b9c2-3838e47dc381.png">
+
 - At the end of the game the player has the choice to start a new 
   game or stop.
+  <img width="215" alt="end of game" src="https://user-images.githubusercontent.com/116040510/236937855-02ea501c-72e6-47ec-8670-7d8da329b5b4.png">
+
 
 ## Future Features
 
