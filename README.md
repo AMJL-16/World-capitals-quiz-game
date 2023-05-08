@@ -5,6 +5,7 @@ The World Capitals Quiz Game is a fun and educational game that tests the player
 
 [Live version of the quiz, here.](https://world-capitals-quiz-game.herokuapp.com/)
 
+"C:\Users\rebec\OneDrive\Desktop\pep8 validation.png"
 
 # How to play
 - The player will be presented with the game's title and rules.
