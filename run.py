@@ -20,8 +20,8 @@ print('')
 print("********************************")
 print("")
 
-playing = ""
-while playing == "":
+PLAYING = ""
+while PLAYING == "":
     playing = input("Do you want to play? (yes/no)  ").strip()
     if playing.lower() == "no":
         print("I am sorry that you don't want to play! Have a nice day!\n")
@@ -30,22 +30,22 @@ while playing == "":
         break
 
     print("Not a valid answer! Please, answer yes or no!\n")
-    playing = ""
+    PLAYING = ""
 
-name = ""
-while name == "":
+NAME = ""
+while NAME == "":
     name = input('Please, enter your Name to start the game: ').strip()
     if name == "":
         print("Your name cannot be nothing!\n")
     elif name.isdigit():
         print("Your name cannot be a number!\n")
-        name = ""
+        NAME = ""
     elif not name.isalpha():
         print("Your name should contain only letters!\n")
-        name = ""
+        NAME = ""
     elif len(name) < 3:
         print("Your name should be at least 3 letters long!\n")
-        name = ""
+        NAME = ""
 
 print("")
 print(f"Hello, {name} have fun!\n")
@@ -146,13 +146,13 @@ def capital_quiz():
         count += 1
 
 
-first_time_run = True
+FIRST_TIME_RUN = True
 
 # start quiz loop
 while True:
-    if first_time_run is True:
+    if FIRST_TIME_RUN is True:
         capital_quiz()
-        first_time_run = False
+        FIRST_TIME_RUN = False
     else:
         # asking if the player wants to play again.
         play_again = input("Do you want to play again (yes/no)?  ").strip()
