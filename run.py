@@ -79,7 +79,13 @@ world_capital = {
         "Lebanon": "Beirut",
         "Jamaica": "Kingston",
         "Vietnam": "Hanoi",
-        "Turkey": "Ankara"
+        "Turkey": "Ankara",
+        "Uruguay": "Montevideo",
+        "Indonesia": "Jakarta",
+        "Fiji": "Suva",
+        "Paraguay": "Asunción",
+        "Brazil": "Brasilia",
+        "Benin": "Porto-Novo"
     }
 
 
