@@ -57,3 +57,14 @@ def handle_input(player_answer):
         return False
     else:
         return True
+
+
+# This function runs the main quiz game.
+def capital_quiz():
+    score = 0  # variable for storing the player score.
+
+    """
+    Using a for loop to iterate over each country stored in the dictionary and
+    asking the player fro the correct answer.
+    """
+
