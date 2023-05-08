@@ -29,10 +29,10 @@ while playing == "":
         quit()
     elif playing.lower() == "yes":
         break
-    
+
     print("Not a valid answer! Please, answer yes or no!\n")
     playing = ""
-        
+
 name = ""
 while name == "":
     name = input('Please, enter your Name to start the game: ').strip()
@@ -123,7 +123,7 @@ def capital_quiz():
             else:
                 chosen_answers.append(country)
                 break
-                
+
         correct_answer = world_capital[country]
         player_answer = handle_input(country)
     # checking if the player has enter a valid answer.
@@ -135,19 +135,20 @@ def capital_quiz():
             print("I am afraid not!\n")
             # we give the correct answer to the playerif it is incorrect.
             print(f"The capital of {country} is {world_capital[country]}\n")
-        
+
         # print the score.
         print(f"You SCORED {score} out of {count} questions.\n")
         count += 1
 
+
 first_time_run = True
 
-# start quiz loop 
+# start quiz loop
 while True:
-    if first_time_run == True:
+    if first_time_run is True:
         capital_quiz()
         first_time_run = False
-    else:       
+    else:
         # asking if the player wants to play again.
         play_again = input("Do you want to play again (yes/no)?  ").strip()
         if play_again.lower() == "yes":  # if yes the game restart.
@@ -155,11 +156,11 @@ while True:
             print("Great, let's sharpen your knowledge.\n")
             capital_quiz()
         # if no this is the end of the game.
-        elif play_again.lower() == "no":  
+        elif play_again.lower() == "no":
             print("")
             print("GAME OVER...GAME OVER...GAME OVER...\n")
             print("Thanks for playing, see you next time!")
             break
         else:
             print("invalid input! Try again!\n")
-            
+
