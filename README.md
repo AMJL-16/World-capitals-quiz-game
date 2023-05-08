@@ -25,6 +25,7 @@ The World Capitals Quiz Game is a fun and educational quiz game that tests your 
 
 # Features
 
+- Display of the game name and rules of the game.
 - Random selection of questions each time the game is played.
 - Simple command-line interface.
 - Input validation and error-checking.
@@ -34,3 +35,15 @@ The World Capitals Quiz Game is a fun and educational quiz game that tests your 
 - At the end of the game the player has the choice to start a new 
   game or stop.
 
+Future Features
+
+- Adding all the capitals of the world.
+- Improving user experience.
+- Level of difficulty.
+
+# Testing
+- Passed the code through CI PEP8 Python linter with no error.
+- Tested for invalid inputs: wrong answer, space, numbers and more.
+- Tested the quiz in my local terminal and in the Code Institute mock terminal.
+
+Bugs
