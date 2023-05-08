@@ -60,14 +60,28 @@ def handle_input(player_answer):
 
 
 # This function runs the main quiz game.
-def capital_quiz():
-    score = 0  # variable for storing the player score.
 
+def capital_quiz():
     """
     Using a for loop to iterate over each country stored in the dictionary and
-    asking the player fro the correct answer.
+    asking the player for the correct answer.
     """
+    # variable for storing the player score.
+    score = 0
+
     for country in world_capital:
         player_answer = input(f'What is the capital of {country} ? : ')
         correct_answer = world_capital[country]
-    #checking if the player has enter a valid answer.
+    # checking if the player has enter a valid answer.
+        if not handle_input(player_answer):
+            return capital_quiz()
+        elif player_answer.lower() == correct_answer.lower():
+            # checking if the answer is correct.
+            print("Absolutely correct!\n")
+            score += 1  # incremneting the score by 1 if correct answer.
+        else:
+            print("I am afraid not!\n")
+            # we give the correct answer to the playerif it is incorrect.
+            print(f"The capital of {country} is {world_capital[country]}\n")
+        print(f"You SCORED  {score} out of 20 questions.")  # print the score.
+    # asking if the player wants to play again.
