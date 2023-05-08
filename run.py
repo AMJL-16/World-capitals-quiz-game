@@ -1,3 +1,6 @@
+import random
+
+
 """
 Print out the title,rules of the game then
 ask the player if they want to play and to input their name
@@ -50,27 +53,35 @@ print(f"Hello, {name} have fun!\n")
 
 # Define a dictionary that contains the countries and capitals for the quiz.
 world_capital = {
-    "France": "Paris",
-    "Bostwana": "Gaborone",
-    "Spain": "Madrid",
-    "Australia": "Canberra",
-    "Bahamas": "Nassau",
-    "Peru": "Lima",
-    "Monaco": "Monaco",
-    "Malaysia": "Kuala Lumpur",
-    "Ireland ": "Dublin",
-    "Belgium": "Brussels",
-    "Mauritius": "Port Louis",
-    "Italy": "Rome",
-    "Vietnam ": "Hanoi",
-    "Qatar": "Doha",
-    "Seychelles": "Victoria",
-    "Bulgaria ": "Sofia",
-    "Croatia ": "Zagreb",
-    "Senegal ": "Dakar",
-    "Thailand ": "Bangkok",
-    "Lebanon ": "Beirut"
-           }
+        "Ireland ": "Dublin",
+        "Australia ": "Canberra",
+        "Brazil  ": "Brasília",
+        "Canada": "Ottawa",
+        "Mauritius ": "Port Louis",
+        "Egypt ": "Cairo",
+        "France ": "Paris",
+        "India ": "New Delhi",
+        "Mexico ": "Mexico City",
+        "Bostwana ": "Gaborone",
+        "South Africa ": "Pretoria",
+        "Bahamas ": "Nassau",
+        "Qatar ": "Doha",
+        "Peru ": "Lima",
+        "Monaco ": "Monaco",
+        "Belgium ": "Brussels",
+        "China ": "Beijing",
+        "Italy ": "Rome",
+        "Spain ": "Madrid",
+        "Morocco ": "Rabat",
+        "Bulgaria ": "Sofia",
+        "Croatia ": "Zagreb",
+        "Senegal ": "Dakar",
+        "Thailand ": "Bangkok",
+        "Lebanon ": "Beirut",
+        "Jamaica ": "Kingston",
+        "Vietnam ": "Hanoi",
+        "Turkey ": "Ankara",
+    }
 
 
 # Define handle_input function.
@@ -97,8 +108,22 @@ def capital_quiz():
     """
     # variable for storing the player score.
     score = 0
+    number_of_questions = 20
 
+    chosen_answers = []
+    count = 1
+    world_countries = []
     for country in world_capital:
+        world_countries.append(country)
+    while count <= number_of_questions:
+        while True:
+            country = random.choice(world_countries)
+            if country in chosen_answers:
+                continue
+            else:
+                chosen_answers.append(country)
+                break
+                
         correct_answer = world_capital[country]
         player_answer = handle_input(country)
     # checking if the player has enter a valid answer.
@@ -110,19 +135,27 @@ def capital_quiz():
             print("I am afraid not!\n")
             # we give the correct answer to the playerif it is incorrect.
             print(f"The capital of {country} is {world_capital[country]}\n")
-        print(f"You SCORED {score} out of 20 questions.\n")  # print the score.
+        
+        # print the score.
+        print(f"You SCORED {score} out of {count} questions.\n")
+        count += 1
 
-    # asking if the player wants to play again.
-    play_again = input("Do you want to play again (yes or no)?  ")
-    if play_again.lower() == "yes":  # if yes the game restart.
-        print("")
-        print("Great, let's sharpen your knowledge.\n")
+first_time_run = True
+
+# start quiz loop 
+while True:
+    if first_time_run == True:
         capital_quiz()
-    else:  # if no this is the end of the game.
-        print("")
-        print("GAME OVER...GAME OVER...GAME OVER...\n")
-        print("Thanks for playing, see you next time!")
-
-
-# call the main quiz function
-capital_quiz()
+        first_time_run = False
+    else:       
+        # asking if the player wants to play again.
+        play_again = input("Do you want to play again (yes or no)?  ")
+        if play_again.lower() == "yes":  # if yes the game restart.
+            print("")
+            print("Great, let's sharpen your knowledge.\n")
+            capital_quiz()
+        else:  # if no this is the end of the game.
+            print("")
+            print("GAME OVER...GAME OVER...GAME OVER...\n")
+            print("Thanks for playing, see you next time!")
+            break
