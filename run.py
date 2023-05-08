@@ -49,9 +49,12 @@ world_capital = {
            }
 
 
-# Function is used to handle empty or incorrect input from the player.
+# Define handle_input function.
 
 def handle_input(player_answer):
+    """
+    Function is used to handle empty or invalid input from the player.
+    """
     if player_answer == "":
         print("You did not enter anything. Please try again.\n")
         return False
@@ -59,7 +62,7 @@ def handle_input(player_answer):
         return True
 
 
-# This function runs the main quiz game.
+# Define function to run the main quiz game.
 
 def capital_quiz():
     """
@@ -84,4 +87,15 @@ def capital_quiz():
             # we give the correct answer to the playerif it is incorrect.
             print(f"The capital of {country} is {world_capital[country]}\n")
         print(f"You SCORED  {score} out of 20 questions.")  # print the score.
+
     # asking if the player wants to play again.
+    play_again = input("Do you want play again (yes or no)?  ")
+    if play_again.lower() == "yes":  # if yes the game restart.
+        print("Great, let's sharpen your knowledge.\n")
+        capital_quiz()
+    else:  # if no this is the end of the game.
+        print("GAME OVER...GAME OVER...GAME OVER...\n")
+        print("Thanks for playing, see you next time!")
+
+
+capital_quiz()
